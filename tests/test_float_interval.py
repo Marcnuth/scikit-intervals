@@ -1,4 +1,4 @@
-from intervals import FloatInterval
+from skintervals import FloatInterval
 
 def test_compare():
     a = FloatInterval.from_str('[1, 3]')

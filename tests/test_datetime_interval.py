@@ -1,6 +1,6 @@
 import arrow
 
-from intervals.datetime_interval import DatetimeInterval
+from skintervals.datetime_interval import DatetimeInterval
 
 
 def test_compare():
