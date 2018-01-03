@@ -1,4 +1,4 @@
-from intervals.float_interval import FloatInterval
+from intervals import FloatInterval
 
 def test_compare():
     a = FloatInterval.from_str('[1, 3]')

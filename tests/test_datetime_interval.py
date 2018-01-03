@@ -1,6 +1,7 @@
-from intervals.datetime_interval import DatetimeInterval
 import arrow
-from pprint import pprint
+
+from intervals.datetime_interval import DatetimeInterval
+
 
 def test_compare():
     a = DatetimeInterval.from_str('[{}, {}]'.format(arrow.get(2017, 12, 30).format('YYYY-MM-DD'), arrow.get(2017, 12, 31).format('YYYY-MM-DD')))
