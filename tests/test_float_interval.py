@@ -35,3 +35,6 @@ def test_compare():
 
     assert (g.intersection(c)) == FloatInterval.from_str('[10.4,15.0)')
     assert (f.intersection(c)) == FloatInterval.from_str('[10.4,39.0)')
+
+def test_bug_1():
+    print(FloatInterval.from_str('[1800,)') in FloatInterval.from_str('[0,180)'))

@@ -72,7 +72,8 @@ class Interval(ABC):
             raise ValueError('the parameter should be type of %s or Interval' % self.value_type)
 
     def _contains_interval(self, other):
-        return self.intersection(other) == other
+        intersect_result = self.intersection(other)
+        return intersect_result and self.intersection(other) == other
 
     def _contains_element(self, ele):
         is_under_upper = (self.upper == np.inf) or ele < self.upper
