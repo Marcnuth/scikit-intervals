@@ -30,7 +30,7 @@ inter1 = DatetimeInterval.from_str('(2017-05-12, 2018-01-01 12:00:39]')
 inter2 = FloatInterval.from_str('(1,3)')
 
 # interval for number which is smaller than 5.4
-inter3 = FloatInterval.from_str('(,5.4)')
+inter3 = FloatInterval.from_str('(5.4)')
 
 # interval for number in whole R
 inter4 = FloatInterval.from_str('(,)')
